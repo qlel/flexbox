@@ -1,0 +1,97 @@
+html,
+body{
+    height: 100%;
+    background: rgb(228, 224, 224);
+    margin: 0;
+    color: #222;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex: 1 0 auto;
+    display: flex;
+}
+footer{
+    flex: 0 0 90px;
+    background: rgb(168, 36, 36);
+    padding: 10px;
+    color: #fff;
+}
+.side{
+    flex: 0 0 40px;
+    background: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.side a.fa{
+    font-size: 1.5em;
+}
+.content{
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+.music-head{
+    flex: 0 0 240px;
+    display: flex;
+    padding: 40px;
+    background: #8d8a8a;
+}
+.music-list{
+    flex: 1 0 auto;
+    list-style-type: none;
+    padding: 5px 10px 0px;
+}
+li{
+    display: flex;
+    padding: 0 20px;
+    min-height: 50px;
+}
+li p{
+    flex: 0 0 25%;
+}
+li:nth-child(2n){
+    background: rgb(141, 139, 139);
+}
+.catty-music{
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+/*底部*/
+footer{
+    display: flex;
+}
+.l-music{
+    flex: 4 1 auto;
+    display: flex;
+}
+.r-control{
+    flex: 6 1 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.l-music img{
+    max-width: 80px;
+    max-height: 80px;
+    padding: 5px;
+}
+.l-music .desc{
+    padding: 0 20px;
+}
+.r-control a.fa{
+    color: white;
+    font-size: 1.5em;
+}
